@@ -26,8 +26,9 @@ public class Player {
             
             drawCard(deck);
             handSize = startSize;
+            
         }
-        
+
     }
     
 

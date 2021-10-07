@@ -1,8 +1,5 @@
 package uno;
 
-import Deck.Card;
-import Deck.Deck;
-import Player.Player;
 import java.util.Scanner;
 
 /*
@@ -11,8 +8,8 @@ import java.util.Scanner;
 public class Uno {
     
     //The Uno class is going to be the main body of the game
-    public static Deck deck = new Deck();
-    public static Player playerOne = new Player();
+    //public static Deck deck = new Deck();
+    //public static Player playerOne = new Player();
     static int playerCount;
     
     Scanner in;
@@ -24,10 +21,12 @@ public class Uno {
         System.out.print("Enter the number of players: ");
         playerCount = in.nextInt();
         
+        UnoGame uno = new UnoGame(playerCount);
+        
         //deck.shuffle();
         //playerOne.initHand(deck);
         
-        System.out.println("The players hand:");
+        /*System.out.println("The players hand:");
         for(Card c : playerOne.getHand()){
             
             System.out.println(c.getCardValue() + " and " + c.getCardColor());
@@ -38,7 +37,7 @@ public class Uno {
         for(Card c : deck.getDeckOfCards()){
         
             System.out.println(c.getCardValue() + " and " + c.getCardColor());
-        }
+        }*/
         
     }
     
